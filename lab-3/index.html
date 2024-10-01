@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Lab 3: Delivering Custom Fonts</title>
+  <style>
+    body {
+      font-family: 'myfont';
+      background-color: #f4f4f4;
+      color: hsl(249, 94%, 31%);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+    p {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+  </style>
+</head>
+<body>
+  <h1>Lab 3: Serving fonts</h1>
+  <p>The given assignment is to know how a specific font can be delivered to a client making a request to our server. So for that i have taken google fonts . Google fonts provide different types of fonts. So the process for getting google fonts we need to go to google font website then we have to select a font that we want to include and then Embed it using the provided <link> or @import tag in the code. Here i have 
+    chosen Press Start 2P font. And at the last i have used java script footer to know when the code is last updated.
+     </p>
+</body>
+<footer>
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</html>
