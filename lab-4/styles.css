@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: 'Cascadia Mono SemiBold';
     line-height: 1.6;
@@ -6,7 +5,7 @@ body {
     margin: 0;
     padding: 20px;
     color: #333;
-    text-align: center; /* Center-align everything */
+    text-align: center; 
 }
 
 header {
@@ -22,19 +21,16 @@ h1 {
     margin: 0;
     padding: 10px 0;
 }
-
-/* Center the article content */
 article {
     background-color: #fff;
     padding: 30px;
-    margin: 0 auto 30px auto; /* Center the article horizontally */
+    margin: 0 auto 30px auto; 
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Set max width for better readability */
-    text-align: center; /* Center-align the text */
+    max-width: 800px;
+    text-align: center; 
 }
 
-/* Scene heading styles */
 h2 {
     font-size: 2em;
     color: #2c3e50;
@@ -44,13 +40,11 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* Text styles */
 p {
     font-size: 1.1em;
     margin-bottom: 10px;
 }
 
-/* Center the strong elements */
 strong {
     color: #34db5e;
     display: block;
@@ -58,7 +52,6 @@ strong {
     margin-bottom: 5px;
 }
 
-/* Link styles */
 a {
     color: #db6034;
     text-decoration: none;
@@ -68,7 +61,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     margin-top: 20px;
@@ -81,7 +73,6 @@ footer {
     border-radius: 0 0 5px 5px;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     article {
         padding: 20px;
@@ -99,7 +90,7 @@ footer {
         font-size: 1em;
     }
 }
-/* Addendum styles */
+
 #addendum {
     background-color: #fff;
     padding: 30px;
@@ -113,7 +104,7 @@ footer {
     color: #333;
     margin-top: 30px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #007bff; /* Blue border line */
+    border-bottom: 2px solid #007bff; 
     padding-bottom: 5px;
 }
 
@@ -121,5 +112,5 @@ footer {
     font-size: 1.1em;
     line-height: 1.6;
     color: #444;
-    margin-bottom: 10px; /* Adjust spacing between list items */
+    margin-bottom: 10px; 
 }
