@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Webpage</h1>
+        </header>
+
+        <!-- Menu Side-Bar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <h2>Bubble Sort</h2>
+            <div class="content-area">
+                <label for="arrayInput">Enter numbers (comma separated):</label>
+                <input type="text" id="arrayInput" placeholder="e.g. 5, 3, 8, 1, 4">
+                <button id="sortButton">Sort Numbers</button>
+                <p>Click the button to sort the array of numbers:</p>
+                <p id="arrayDisplay">[]</p>
+            </div>
+        </main>
+
+        <!-- Advertisement -->
+        <aside class="advertisement">
+            <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozNTc3MTk5MTI2NzMyMjM5OjE3MzEzNjQwMzA6c3BfYXRmOjMwMDExODcwMTY4MzAwMjo6MDo6&url=%2FTAGRY-Bluetooth-Headphones-Earphones-Waterproof%2Fdp%2FB09DT48V16%2Fref%3Dsr_1_1_sspa%3Fcrid%3D8G60R9UP3H4I%26dib%3DeyJ2IjoiMSJ9.z3PTqJjFH4z-EE5L1NErprvPSfEhsBdG4yYa3LzltuGvnSCUxKd9nKKGZ_sK6fVCe9Eo4hyX6cPFCaqLovgWxR-NYyaKETZ08ERiU1i8nc5xNxyH0jhHqQHH7OTNstNcPmOouCNi4iGJ-Epibp4hQ9RjDaC7xQsMe_4De8zV1dxEjLV2_9byNmelCcs0_xsbr0LQe0MAyOZCaKcBaX6oI5vOUA0xkx_SFsIGhRsFS-Y.xJAnsQilXVmZH56UhVbNZJ1zsp-aIlNWA2G9d8awZvM%26dib_tag%3Dse%26keywords%3Dair%2Bpods%26qid%3D1731364029%26sprefix%3Dair%2Bpod%252Caps%252C223%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/61uEvVoizoL._AC_UY327_FMwebp_QL65_.jpg" loading="lazy" alt="advertisement">
+            </a>
+        </aside>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>Last updated: <span id="lastModified"></span></p>
+            <p>
+                Addendum: This page implements a simple JavaScript functionality to sort an array of numbers using a bubble sort algorithm.
+                The JavaScript was written in a separate file, and the sorting is triggered by a button click.
+                A small challenge was dealing with updating the displayed array dynamically, which was solved using the DOM.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
