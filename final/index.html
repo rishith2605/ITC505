@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lights Out Puzzle</h1>
+    <p>Turn off all the lights to win! Click a square to toggle its state and its neighbors.</p>
+    <div id="game-board"></div>
+    <button id="reset-button">Reset</button>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <p><h1>Addendum:</h1></p>
+        <p><h2>Process overview</h2></p>
+        <p>Out of the two mechanics proposed for the “Lights Out” game, the toggling of a particular cell and some or all of its directly adjacent neighbors when the cell is clicked, the first step was to parse out the mechanics and rules. I made a table with cells by using table HTML elements and using JavaScript, I made the cells toggle between “on” which is yellow and “off which is gray. The first problematical feature was the fact that the initial configuration had to be solvable. At first, placing states randomly resulted in cases which provided unsolvable designs, so I introduced a scheme that involved random clicks to any off illustrated grid guaranteeing solvable designs.</p>
+        <p><h2>Creative Choices</h2></p>
+        <p>For simplicity, I adopted a minimalism design where two opposite colors are used, such as yellow for active cells and gray for inactive cells. Such enabled easy differentiation between the two states. For better feel of an application I put smooth transition over cell state changes which gives better feel to the user. The reset button was positioned and made larger with mouse over effects, so that it was functional and stylistically blended with the game-space. The choice of CSS Grid led to a responsive board, which was easily fit to any smaller display.</p>
+        <p><h2>Problems & Their Solutions</h2></p>
+        <p>The biggest difficulty was to make sure that the game board was always a solvable one, whatever option the participants chose. First, the randomization of the board state culminated in unfunctional configurations on the board. The only way to ensure that there is a solvable configuration was to mimic random clicks on buttons which were off and ensure an all-off grid. Another difficulty was to manage the switching between cells to create a harmoniously and organically looking interactive system. To achieve this, I had to make sure that only the selected cell, and the cells surrounding it in the UI, are toggled. This was achieved through proper computation of neighbors locations. Finally, providing the reset functionality meant resetting the entire game board of which was achieved through clearing the grid in which the game was played whenever the reset button was pressed.</p>
+        <p><h2>Insights Gained</h2></p>
+        <p>This work further alerted me to the importance of having modular code. Since the logic of the game is so complex I split it to smaller reusable functions such as toggleCell and checkWin which made it easier to manage and debug. Finally, CSS Grid offered me an easy way to make the game responsive, and I could adapt it to the sizes of screens that users employ. I also realized that even simple changing effects like hover and clear win notifications are important because they can bring a lot of fun for any player of the game.</p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
